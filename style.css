@@ -1,0 +1,197 @@
+body 
+{
+	margin: 0;
+		font-family: 'Montserrat', sans-serif;
+	font-size: 15px;
+	line-height: 1.6;
+		color: 	#191970;
+}
+
+*,
+*:before,
+*:after {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+h1,h2,h3,h4,h5,h6{
+	margin: 0;
+
+}
+
+/* Container */
+.container {
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+
+}
+
+/* Intro */
+
+.intro {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 100%;
+	height: 100vh;
+	background: url("../images/intro.jpg") center no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+
+/* intro_inner  */
+.intro_inner{
+	width: 100%;
+	max-width: 650px;
+	margin: 0 auto;
+
+text-align: center;
+
+}
+
+/* Intro_title */
+
+.intro_title{
+	margin-bottom: 25px;
+	color:#9400D3;
+
+	font-size: 90px;
+	font-weight: 700;
+	text-transform: uppercase;
+	line-height: 1;	
+}
+
+.intro_title:after{
+	content: "";
+	display: block;
+	width: 60px;
+	height: 3px;
+	background-color: #9400D3;
+	margin: 40px auto;
+
+
+}
+
+/* Intro_suptitle */
+.intro_suptitle{
+	font-family: 'Sevillana', cursive;
+	font-size: 45px;
+	color:#9400D3;
+}
+
+
+/* Header */
+.header {
+	width: 100%;
+	padding-top: 30px;
+
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 1000;
+
+}
+
+.header_inner{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+
+.header_logo {
+font-size: 30px;
+font-weight: 700;
+color:#191970
+
+}
+
+/* Nav */
+.nav {
+font-size: 14;
+text-transform: uppercase;
+
+
+}
+
+/* Nav_link */
+.nav_link {
+	display: inline-block;
+	vertical-align: top;
+	margin: 0 15px;
+	position: relative;
+
+	color: 	#191970;
+	text-decoration: none;
+
+transition: color 0.2s linear;
+}
+
+.nav_link:after {
+	content: "";
+	display: block;
+	width: 100%;
+	height: 3px;
+	
+	background-color: #EE82EE;
+	opacity: 0;
+
+	position: absolute;
+	top: 100%;
+	left: 0;
+	z-index: 1;
+
+	transition: opacity: 0.2 s linear;
+
+
+}
+
+.nav_link:hover {
+	color: #EE82EE;
+}
+
+.nav_link:hover:after {
+	opacity: 1;
+
+}
+
+/*Button*/
+.btn{
+		display: inline-block;
+	vertical-align: top;
+	padding: 8px 30px;
+
+	border: 3px solid #9400D3;
+
+	font-size: 14px;
+	font-weight: 700;
+	color:#9400D3;
+	text-transform: uppercase;
+	text-decoration: none;
+
+	transition: background 0.2s linear, color 0.2s linear;
+}
+
+
+
+.btn:hover {
+	background-color: #EE82EE;
+	color: #fff;
+
+}
+
+/* Section */
+
+.section {
+	padding: 110px 0;
+
+}
+
+.secion_header{
+	width: 100%;
+	max-width: 950px;
+	margin-bottom: 40px;
+
+}
